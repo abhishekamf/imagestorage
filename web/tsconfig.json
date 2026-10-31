@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "es2022",
+    "noImplicitOverride": true,
+    "paths": {
+      "#i18n/*": ["../i18n/*"],
+      "#test-data/*": ["./src/test-data/*"],
+      "#tests/*": ["./src/../tests/*"]
+    },
+    "rootDir": ".",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2022",
+    "types": ["$app/types", "vitest/globals"]
+  },
+  "exclude": ["vite.config.ts", "src/service-worker/*"],
+  "extends": "$app/tsconfig",
+  "include": ["src", "vite.config.ts", "tests"]
+}
